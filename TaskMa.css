@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    padding: 2%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input {
+    height: 4vh;
+    width: 20vw;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add {
+    height: 5.1vh;
+    width: 5vw;
+    margin: -11px;
+    padding: 0;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: darkblue;
+}
+
+.second {
+    margin: 20px 0;
+}
+
+button {
+    height: 5vh;
+    width: 8vw;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgb(216, 238, 239);
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: rgb(64, 64, 219);
+    color: white;
+}
+
+.all, .active, .complete {
+    width: auto;
+    padding: 0 15px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#task-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.task-check {
+    margin-right: 10px;
+}
+
+.task-name {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+    input, .add {
+        width: 80%;
+    }
+    button {
+        width: 40%;
+    }
+    #task-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
